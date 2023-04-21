@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap");
+
+/* || Reset style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgba(197, 247, 201, 0.301);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  background-color: rgba(43, 171, 245, 0.87);
+  padding: 5rem;
+  overflow: hidden;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.342);
+}
+
+.head {
+  color: #fff;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.head > h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+form {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.input_Container > input,
+.btn > button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 2rem;
+}
+.input_Container > input {
+  width: 350px;
+}
+
+.btn > button {
+  background-color: rgba(19, 26, 31, 0.829);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.btn > button:hover {
+  background-color: rgb(19, 26, 31);
+  color: #fff;
+}
+
+.weatherDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weatherDetailsContainer > .weather_Icon_container {
+  width: 100px;
+  height: 100px;
+  margin: 1.5rem 0;
+}
+
+.weatherDetailsContainer .weather_Icon_container > img {
+  width: 100%;
+  display: block;
+}
+
+.temperature {
+  margin: 0 0 1.5rem;
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.description {
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.weatherDetails {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.weatherDetails div:first-child {
+  background-color: rgba(40, 255, 86, 0.664);
+  padding: 4rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+.weatherDetails div:nth-child(2) {
+  background-color: rgba(40, 255, 86, 0.664);
+  padding: 4rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/6249546/pexels-photo-6249546.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgb(3, 4, 5);
+  transition: transform 0.3s ease;
+}
+.weatherDetails div:last-child {
+  background-color: rgba(40, 255, 86, 0.664);
+  padding: 4rem;
+  text-transform: capitalize;
+  white-space: nowrap;
+  border-radius: 5px;
+  background-image: url(https://images.pexels.com/photos/5149451/pexels-photo-5149451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  aspect-ratio: 16/4;
+  object-fit: cover;
+  object-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgb(3, 4, 5);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.weatherDetails > div {
+  flex: 1;
+}
+
+.weatherDetails div:first-child:hover,
+.weatherDetails div:nth-child(2):hover,
+.weatherDetails div:last-child:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 615px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .input_Container > input {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
